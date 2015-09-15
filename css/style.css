@@ -1,0 +1,151 @@
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700&subset=latin,latin-ext);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {b
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* GLOBAL STYLES */
+header{
+	background: url('../images/cover.jpg') no-repeat top;
+	background-size:cover;
+	width: 100%;
+	height:934px;
+	}
+
+header .container{
+	width:1227px;
+	margin:0 auto;
+}
+
+.logo{float:left; margin-top:40px;}
+nav{overflow: hidden;}
+nav ol{list-style:none; float:right; margin-top:40px;}
+nav ol li{float:left; margin-right:80px;}
+nav ol li:last-child{margin-right:0;}
+nav ol li a{ font-size:13px; text-decoration:none; text-transform:uppercase; color:#000; letter-spacing: 6px;}
+nav ol li a:hover{ color:#333;}
+
+header .container h1{font-size:120px; text-align: center; font-weight: 600; text-transform: uppercase; clear: both; margin-top: 230px;}
+header .container hr{width:65px; height: 4px; background: #c51230; margin:65px auto 75px;}
+header .container p{font-size:30px; text-align: center; width:100%;}
+
+.about .holder{width:33.33%; height:380px; text-align: center; float: left; background:#fbfbfb; padding-top: 150px; padding-bottom: 100px;}
+
+.about .holder:hover{background:#ededed;}
+.about .holder img{margin-bottom:50px;}
+.about .holder h2{font-size: 24px; font-weight: 600; letter-spacing: 6px; text-transform: uppercase; color:#333;}
+.about .holder hr{width:42px; height:2px; background:#cbcbcb; margin:40px auto;}
+.about .holder p{width:90%; margin: 0 auto; font-size: 22px; line-height:34px;  color:#888; font-weight: 300;}
+
+.open_positions{ overflow: hidden; clear: both; padding-top: 140px; }
+.open_positions .container{width:1044px; margin:0 auto;}
+.open_positions span{display: block; text-align: center; font-size: 14px; color:#9b9b9b; margin-bottom: 35px; letter-spacing: 6px; text-transform: uppercase;}
+.open_positions h2{font-size:60px; text-transform: uppercase; text-align: center; font-weight: 600;}
+.open_positions hr{width: 60px; height: 3px; background-color: #d0011b; margin: 60px auto; border:none;}
+.open_positions p{ font-size:22px; line-height:32px; font-weight:300; margin-bottom:20px;}
+.open_positions .tagline{ font-size: 36px; line-height:50px; font-weight:300; text-align: center; color:#333; display: block; width: 90%;}
+
+.open_positions .position-name{ overflow:hidden; margin-top:100px;}
+.open_positions .position-name h3{ font-size:28px; font-weight:600; color:#333; text-align:left; text-transform:uppercase; padding-bottom: 40px;}
+.open_positions .manager h3{font-size:28px; font-weight:600; color:#FFF; text-align:left; text-transform:uppercase; padding-top: 40px; padding-bottom: 40px;}
+
+.left{width:65%; float:left;}
+.left  p{ font-size:24px; color:#888; text-align:left;}
+.left  ul{list-style:none; paddnig:0; margin:0;}
+.left ul li{ float:left; border:1px solid #cbcbcb; padding:5px 10px; margin-right:10px; color:#ca1130; font-weight:bold; margin-top:20px;}
+.open_positions .position-name  a{display:block; text-align:center; border:1px solid #e4e4e4; padding:15px 10px; font-size:18px; font-weight:600;float:right; color:#333; text-transform:uppercase; letter-spacing:3px; text-decoration:none;}
+
+.manager-section{background:#333; color:#FFF!important; padding-bottom:50px;}
+.manager-section .left p, .manager a{ color:#FFF!important;}
+.manager .left ul li{color:#FFF!important;}
+.more{display:block; border:1px solid #e4e4e4; font-weight:600; letter-spacing: 4px; text-transform:uppercase; padding:20px 30px; margin:100px auto; width:120px; font-size:14px; text-align:center; color:#4b4b4b; text-decoration:none;}
+
+.about-diwanee{background:#fbfbfb; margin:50px 0; padding:100px 0;}
+.about-diwanee .container{width:1044px; margin:0 auto;}
+.about-diwanee .container span {display: block;text-align: center; font-size: 14px; color: #9b9b9b; letter-spacing: 6px; margin-bottom: 60px; text-transform: uppercase;}
+.about-diwanee .container h2{font-size: 60px; text-transform: uppercase; text-align: center; font-weight: 400;}
+.about-diwanee .container hr{width: 60px; height: 3px; background-color: #d0011b; margin: 60px auto; border:none;}
+.about-diwanee .container p{ font-size:22px; line-height:32px; font-weight:300; margin-bottom:20px;}
+
+.social{ margin:100px 0; overflow:hidden;}
+.social .container{width:1044px; margin:0 auto;}
+.social span{display: block;text-align: center; font-size: 14px; color: #9b9b9b; letter-spacing: 6px; text-transform: uppercase;}
+
+.social ul{ width:158px; margin:40px auto;}
+.social ul li{float:left;margin-right:15px;}
+.social ul li:last-child{margin-right:0;}
+
+footer{background:#2d2d2d; overflow:hidden; padding:40px 0 0; font-weight: 300;}
+footer .container{width:1044px; margin:0 auto; overflow:hidden;}
+footer .container .holder{width:33%; float:left;}
+footer .container .holder img{ float:left; margin: 5px 0 5px 5px;}
+footer .container .holder h3{ float:left; margin: 5px 0 0 5px; font-size:18px; color:#FFF; text-transform:uppercase;}
+footer .container .holder p{ clear:both; color:#9a9c9b; font-size:18px; padding-bottom: 5px}
+
+footer .down-footer{ background:#242424; padding:40px 0 20px; overflow:hidden; clear:both; margin-top:40px; color:#56564e;}
+footer .down-footer .container{width:1044px; margin:0 auto;}
+footer .down-footer .container .left{ width:70%; letter-spacing:2px; float:left; text-transform:uppercase;  color:#56564e;}
+footer .down-footer .container .right a{ color:#56564e; text-decoration:none;}
+footer .down-footer .container .right{ width:30%; float:right;}
+
+footer .down-footer .container .right ul{ width:158px; float:left;}
+footer .down-footer .container .right ul li{float:left;margin-right:15px;}
+footer .down-footer .container .right ul li:last-child{margin-right:0;}
+
+@media (max-width:1070px){
+	header{height:70%;}
+
+	header .container p { margin-bottom: 60px;	font-size: 20px;}
+
+	header .container h1{margin-top:80px; font-size:80px;}
+
+	.about .holder {width: 100%;}
+	header .container,
+	.about-diwanee .container,
+	.open_positions .container,
+	.social .container,
+	footer .container,
+	footer .down-footer .container{width:91%;padding:0 30px;}
+
+}
