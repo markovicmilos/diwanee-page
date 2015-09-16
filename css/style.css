@@ -1,5 +1,6 @@
 
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700&subset=latin,latin-ext);
+* { box-sizing: border-box; }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,7 +55,9 @@ header{
 	}
 
 header .container{
-	width:1227px;
+	max-width: 1227px;
+	padding-left: 50px;
+	padding-right: 50px;
 	margin:0 auto;
 }
 
@@ -68,7 +71,7 @@ nav ol li a:hover{ color:#333;}
 
 header .container h1{font-size:120px; text-align: center; font-weight: 600; text-transform: uppercase; clear: both; margin-top: 230px;}
 header .container hr{width:65px; height: 4px; background: #c51230; margin:65px auto 75px;}
-header .container p{font-size:30px; text-align: center; width:100%;}
+header .container p{font-size:30px; text-align: center; width:55%; margin: 0 auto;}
 
 .about .holder{width:33.33%; height:380px; text-align: center; float: left; background:#fbfbfb; padding-top: 150px; padding-bottom: 100px;}
 
@@ -81,7 +84,7 @@ header .container p{font-size:30px; text-align: center; width:100%;}
 .open_positions{ overflow: hidden; clear: both; padding-top: 140px; }
 .open_positions .container{width:1044px; margin:0 auto;}
 .open_positions span{display: block; text-align: center; font-size: 14px; color:#9b9b9b; margin-bottom: 35px; letter-spacing: 6px; text-transform: uppercase;}
-.open_positions h2{font-size:60px; text-transform: uppercase; text-align: center; font-weight: 600;}
+.open_positions h2{font-size:60px; text-transform: uppercase; text-align: center; font-weight: 600; letter-spacing: 6px;}
 .open_positions hr{width: 60px; height: 3px; background-color: #d0011b; margin: 60px auto; border:none;}
 .open_positions p{ font-size:22px; line-height:32px; font-weight:300; margin-bottom:20px;}
 .open_positions .tagline{ font-size: 36px; line-height:50px; font-weight:300; text-align: center; color:#333; display: block; width: 90%;}
@@ -93,7 +96,7 @@ header .container p{font-size:30px; text-align: center; width:100%;}
 .left{width:65%; float:left;}
 .left  p{ font-size:24px; color:#888; text-align:left;}
 .left  ul{list-style:none; paddnig:0; margin:0;}
-.left ul li{ float:left; border:1px solid #cbcbcb; padding:5px 10px; margin-right:10px; color:#ca1130; font-weight:bold; margin-top:20px;}
+.left ul li{ float:left; border:1px solid #cbcbcb; padding:5px 10px; margin-right:10px; color:#ca1130; font-weight:regular; margin-top:20px;}
 .open_positions .position-name  a{display:block; text-align:center; border:1px solid #e4e4e4; padding:15px 10px; font-size:18px; font-weight:600;float:right; color:#333; text-transform:uppercase; letter-spacing:3px; text-decoration:none;}
 
 .manager-section{background:#333; color:#FFF!important; padding-bottom:50px;}
@@ -104,9 +107,9 @@ header .container p{font-size:30px; text-align: center; width:100%;}
 .about-diwanee{background:#fbfbfb; margin:50px 0; padding:100px 0;}
 .about-diwanee .container{width:1044px; margin:0 auto;}
 .about-diwanee .container span {display: block;text-align: center; font-size: 14px; color: #9b9b9b; letter-spacing: 6px; margin-bottom: 60px; text-transform: uppercase;}
-.about-diwanee .container h2{font-size: 60px; text-transform: uppercase; text-align: center; font-weight: 400;}
+.about-diwanee .container h2{font-size: 60px; text-transform: uppercase; text-align: center; font-weight: 600;}
 .about-diwanee .container hr{width: 60px; height: 3px; background-color: #d0011b; margin: 60px auto; border:none;}
-.about-diwanee .container p{ font-size:22px; line-height:32px; font-weight:300; margin-bottom:20px;}
+.about-diwanee .container p{ font-size:22px; line-height:32px; font-weight:300; margin-bottom:20px; text-align: justify;}
 
 .social{ margin:100px 0; overflow:hidden;}
 .social .container{width:1044px; margin:0 auto;}
@@ -133,6 +136,11 @@ footer .down-footer .container .right ul{ width:158px; float:left;}
 footer .down-footer .container .right ul li{float:left;margin-right:15px;}
 footer .down-footer .container .right ul li:last-child{margin-right:0;}
 
+@media (max-width:1227px){
+	header .container{width:100%;}
+}
+
+
 @media (max-width:1070px){
 	header{height:70%;}
 
@@ -140,8 +148,7 @@ footer .down-footer .container .right ul li:last-child{margin-right:0;}
 
 	header .container h1{margin-top:80px; font-size:80px;}
 
-	.about .holder {width: 100%;}
-	header .container,
+	.about .holder {width: 100%; height: auto;}
 	.about-diwanee .container,
 	.open_positions .container,
 	.social .container,
